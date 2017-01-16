@@ -1,0 +1,19 @@
+ToolTip for Ez publish
+==========================
+Author: Jairo Riascos
+
+This utility is based in qtip project (http://craigsworks.com/projects/qtip/), here you can find more information about api and customization.
+Note: qtip uses jquery v1.3.2, doesn't work with newest versions, download the latest version of qtip and make the required modifications.
+***Documentation update (March 4th 2011)
+
+You can use qtip with jquery 1.4.2 by downloading a fixed version of qtip, Please go to: http://blog.ixti.ru/archives/605, and download the Full (ori­ginal) pack­age fixed with patch.
+
+Implementation
+--------------
+
+1. Place aplutils in your extension directory.
+2. Active extension.
+3. Copy tooltip.ini to your settings folder, rename tooltip.ini.append.php and make the required modifications.
+4. Include tooltip.tpl to forms templates {include uri="design:tooltip.tpl"}.
+5. Copy tooltip.tpl to the siteaccess related design and make the style modifications as you need, don't forget review qtip documentation (http://craigsworks.com/projects/qtip/).
+

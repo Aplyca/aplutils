@@ -1,0 +1,35 @@
+form input:focus
+{
+	background: #F2F2F2;
+
+}
+
+form input[type="text"]
+{
+	font-family : Arial, Helvetica, sans-serif;	
+	font-size : 18px;	
+}
+
+form input[type="password"]
+{
+	font-family : Arial, Helvetica, sans-serif;	
+	font-size : 18px;	
+}
+
+form input[type="file"]
+{
+	font-family : Arial, Helvetica, sans-serif;	
+	font-size : 16px;	
+}
+
+form input[type="submit"]
+{
+	font-family : Arial, Helvetica, sans-serif;	
+	font-size : 16px;	
+}
+
+.error_strings{ 
+	font-family:Verdana; 
+	font-size:10px; 
+	color:#660000;
+}

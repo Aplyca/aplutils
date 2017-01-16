@@ -1,0 +1,41 @@
+/**
+* jQuery Treemenu Plugin 1.0
+*
+* http://www.aplyca.com/
+*
+* Copyright (c) 2012 Aplyca SAS 
+*/
+
+.treemenu, .treemenu ul
+{
+    list-style-type:none;
+    padding:0px;
+}
+
+.treemenu li
+{
+    background-repeat:no-repeat;
+    background-position:0px 5px;
+    padding: 0px 0px 0px 15px;
+    margin: 0px;
+}
+
+.treemenu .pointer
+{
+	cursor: pointer;
+}
+.treemenu ul
+{
+    display: none;
+    margin: 0px;
+}
+
+.treemenu .open
+{
+   background-image:url("../images/item-open.png") !important;
+}
+
+.treemenu .children
+{
+    background-image:url("../images/item-children.png");
+}

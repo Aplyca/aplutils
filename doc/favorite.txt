@@ -1,0 +1,16 @@
+ToolTip for Ez publish
+==========================
+Author: Jairo Riascos
+
+This utility allows to add and remove user bookmarks using ajax.
+
+
+Implementation
+--------------
+
+1. Place aplutils in your extension directory.
+2. Active extension.
+3. Make sure that jquery is available 
+4. Include favorite.tpl where you required {include uri="design:favorite.tpl" node_id=$node.node_id}, send the node_id to bookmark.
+5. Make the template modifications as you need (Note: copy the template to your design folder before make any modification).
+Note: favorite.js and favorite.css are required, this files are included in design.ini.

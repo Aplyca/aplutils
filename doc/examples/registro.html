@@ -1,0 +1,159 @@
+<html>
+<head> 
+	<title> Apl eZ Form Test </title> 
+	<link rel="stylesheet" type="text/css" href="../../design/standard/stylesheets/forms/formstyles.css" />
+	<script type="text/javascript" src="jquery-1.3.2.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../design/standard/javascript/forms/aplezvalidationevents.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../design/standard/javascript/tooltip/jquery.qtip-1.0.0-rc3.min.js" charset="utf-8"></script>	
+</head>
+
+
+<body>
+
+	<form name="Register" method="post" action="/user/register" enctype="multipart/form-data">
+
+	<div class="attribute-header">
+		<h1 class="long">Registrar usuario</h1>
+	</div>
+	<div class="form_row"><span class="required_field">(*) Indica un campo obligatorio.</span></div>
+											<div class="form_row">
+						<input type="hidden" value="24341" name="ContentObjectAttribute_id[]" class="input_hidden">
+						<div class="block">
+							<label>Nombre  <span class="required_field">*</span></label>
+							<input type="text" value="" name="ContentObjectAttribute_ezstring_data_text_24341" size="70" class="box ezcc-user ezcca-user_first_name" id="ezcoa-8_first_name">
+						</div>
+					</div>
+																																				<div class="form_row">
+						<input type="hidden" value="24342" name="ContentObjectAttribute_id[]" class="input_hidden">
+						<div class="block">
+							<label>Apellido  <span class="required_field">*</span></label>
+							<input type="text" value="" name="ContentObjectAttribute_ezstring_data_text_24342" size="70" class="box ezcc-user ezcca-user_last_name" id="ezcoa-9_last_name">
+						</div>
+					</div>
+																																				<div class="form_row">
+						<input type="hidden" value="24343" name="ContentObjectAttribute_id[]" class="input_hidden">
+						<div class="block">
+							<label>Cuenta de usuario </label>
+							
+
+
+
+	<div class="block">
+
+
+	<div class="element">
+		<label>Nombre de usuario:</label>
+				<input type="text" value="" size="16" name="ContentObjectAttribute_data_user_login_24343" class="ezcc-user ezcca-user_user_account" id="ezcoa-12_user_account_login">
+		</div>
+
+
+	<div class="element">
+		<label>Contraseña:</label>
+		<input type="password" value="" size="16" name="ContentObjectAttribute_data_user_password_24343" class="ezcc-user ezcca-user_user_account" id="ezcoa-12_user_account_password">
+	</div>
+
+
+	<div class="element">
+		<label>Confirmar contraseña:</label>
+		<input type="password" value="" size="16" name="ContentObjectAttribute_data_user_password_confirm_24343" class="ezcc-user ezcca-user_user_account" id="ezcoa-12_user_account_password_confirm">
+	</div>
+
+	
+<div class="element">
+<label>Cantidad</label><input type="text" value="0" size="10" name="ContentObjectAttribute_data_integer_24634" class="box ezcc-realestate_announcement ezcca-realestate_announcement_price" id="ezcoa-577_price"></div>	
+
+<div class="element">
+<label>Precio</label><input type="text" value="0" size="10" name="ContentObjectAttribute_data_float_24634" class="box ezcc-realestate_announcement ezcca-realedstate_adnncouncement_price" id="ezcoa-577_pcrice"></div>	
+
+	<div class="element">
+		<label>Correo electrónico: <span class="required_field">*</span> </label>
+		<input type="text" value="" size="28" name="ContentObjectAttribute_data_user_email_24343" class="ezcc-user ezcca-user_user_account" id="ezcoa-12_user_account_email">
+		
+	</div>
+
+	<div class="break"></div><div class="break"></div>
+	</div>
+
+
+						</div>
+					</div>
+																																																											<div class="form_row">
+						<input type="hidden" value="24345" name="ContentObjectAttribute_id[]" class="input_hidden">
+						<div class="block">
+							<label>Imagen </label>
+							
+
+
+
+
+	<div class="block">
+		<input type="hidden" value="1048576" name="MAX_FILE_SIZE">
+		<label>Nuevo archivo de imagen para subir:</label>
+		<input type="file" name="ContentObjectAttribute_data_imagename_24345" class="box ezcc-user ezcca-user_image" id="ezcoa-180_image_file">
+	</div>
+
+
+
+
+
+						</div>
+					</div>
+							
+		<input type="hidden" value="" name="RedirectAfterUserRegister" class="input_hidden">
+
+		<div class="buttonblock">
+			 <input type="hidden" value="1337" name="UserID" class="button input_hidden">
+			
+			   <input type="submit" value="Regístrate" name="PublishButton" class="button">
+			<input type="submit" value="Descartar" name="CancelButton" class="button">
+		</div></form>
+	
+<script type="text/javascript">
+$(document).ready(function() 
+{
+   // Match all link elements with href attributes within the content div
+  $("input").qtip({
+		content: 'Presets, presets and more presets. Let\'s spice it up a little with our own style! <h1>HTML Tag</h1>',
+		position: {
+			corner: {
+				target: 'topRight',
+				tooltip: 'bottomLeft'
+			}
+		},
+		style: { 
+		 //  width: 200,
+			padding: 5,
+			background: '#A2D959',
+			color: 'black',
+			textAlign: 'center',
+			border: {
+				width: 7,
+				radius: 5,
+				color: '#6699CC'
+			},
+			tip: 'bottomLeft',
+			
+		},
+		hide:{delay:500}	
+	});
+});
+</script>
+
+	
+<script type="text/javascript">
+	starteZForm();
+	
+	$("input[name^='ContentObjectAttribute']").blur(function() {
+		validate(this);
+	}); 
+	
+	$("input[name^='ContentObjectAttribute']").focus(function() {
+		fieldEvents(this);
+	}); 
+	
+	
+</script>
+		
+</body>
+
+</html>

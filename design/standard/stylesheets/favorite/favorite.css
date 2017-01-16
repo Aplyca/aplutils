@@ -1,0 +1,3 @@
+div.podFavBtn{background:url("../../images/ads_gray.gif") no-repeat scroll left top transparent;height:18px;width:18px;cursor:pointer;float:left;}
+div.podFavBtnFav{background:url("../../images/ads.gif") no-repeat scroll left top transparent;height:18px;width:18px;cursor:pointer;float:left;}
+p.favorite{float:left;font-size:11px;padding-left:9px;}

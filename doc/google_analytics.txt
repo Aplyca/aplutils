@@ -1,0 +1,27 @@
+Easy Google Analytics for Ez publish
+==========================
+Author: Jairo Riascos
+
+Note: this template generate a google analytics script latest to Sep/2010 like:
+"<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>"
+
+	if google has other script code please update google_analytics.tpl
+Implementation
+--------------
+
+1. Place aplutils in your extension directory.
+2. Active extension.
+3. Include google_analytics.tpl in pagelayout and overrides like you need {include uri="design:google_analytics.tpl"}.
+5. Copy googleanalytics.ini to your settings folder and update the TrackerID. 
